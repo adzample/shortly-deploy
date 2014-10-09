@@ -131,15 +131,13 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('test', [
-    'mochaTest'
   ]);
 
   grunt.registerTask('build', [
     'concat',
     'uglify',
     'cssmin',
-    'jshint',
-    'mochaTest'
+    'jshint'
   ]);
 
   grunt.registerTask('upload', function(n) {
